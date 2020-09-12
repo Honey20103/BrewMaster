@@ -1,7 +1,9 @@
 
 # Brew Master 
 > Home beer brewing logs and recipes. 
-This repo hosts the assets used to build the Brew Master website / web application. A web application focused on offering passionate home beer brewers a platform they could utilise to log the entire process and steps taken during brew day. The Brew Master app will help home brewers improve on their brewing process and end result of the beer batches, by having a log/diary of each recipe they will be able to defer to for future brew days.
+This repo hosts the assets used to build the Brew Master website / web application. A web application focused on offering passionate home beer brewers a platform they could utilise to log the entire process and steps taken during brew day. 
+
+The Brew Master app will help home brewers improve on their brewing process and end result of the beer batches, by having a log/diary of each recipe they will be able to defer to for future brew days.
 
 ### Background
 The idea of this application was birthed from my boyfriend who does homebrewing as a hobby. During a normal brew day he would have a notebook logging and taking notes on the entire process of the specific recipe on the day, these would include temperatures etc. Notes would be taken for each process such as the mashing, lautering, boiling, cooling, fermentating, maturing(carbonation) and packaging steps.
