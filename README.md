@@ -1,39 +1,111 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+# Brew Master 
+> Home beer brewing logs and recipes. 
+This repo hosts the assets used to build the Brew Master website / web application. A web application focused on offering passionate home beer brewers a platform they could utilise to log the entire process and steps taken during brew day. The Brew Master app will help home brewers improve on their brewing process and end result of the beer batches, by having a log/diary of each recipe they will be able to defer to for future brew days.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### Background
+The idea of this application was birthed from my boyfriend who does homebrewing as a hobby. During a normal brew day he would have a notebook logging and taking notes on the entire process of the specific recipe on the day, these would include temperatures etc. Notes would be taken for each process such as the mashing, lautering, boiling, cooling, fermentating, maturing(carbonation) and packaging steps.
+When he needed to repeat the same brew, or after tasting the batch he would go back to his notebook to review notes and look at ways to improve or change some of the parameters in the brew such as temperatures for boiling and cooling and ingredient amounts. 
 
-## Gitpod Reminders
+Hence, this is where the app idea stemed from. And thus away with the notebook, and hello 21st century logging or technology. He will now be able to write done his brew day notes in the application, easily return to recipes to edit and make changes, and have his recipe logs available on a database online. No fear for loss of the notebook and easy access.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The application will be available to the public in the future as a beer brewing recipe site and ability to review the recipes.
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+### Demo 
+A live demo can be found here [here](xxx)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
+## UX
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+### User stories
+- As an amateur home brewer, it is important to take record of the entire process of brew day,
+inorder to learn from my previous mistakes and help improve my future batches.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- I often record my brew day notes or logs on a physical notebook, or sometimes the closest paper I
+can find, and in some cases I lose it and there goes my brew record, no recollection of what was done.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- As a faily confident home brewer, I need an application to store my recipes and eventually start a microbrewery or make a profit from my home made recipes.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- I am quite new to brewing, and I often make mistakes and need to change things in my notes, my notebook ends up looking like a childs scrapbook. Having digital notebook will help with keeping my notes neat and easily editable.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- As a user I would like to be able to see other brewer's processes, mistakes and results to improve my own brewing techniques.
 
---------
+- Beer brewing is quite an expensive hobby, having to view other brewers recipes saves me the need buy brew recipes from companies.
 
-Happy coding!
+### Strategy
+My goal in the design was to make it as easy as possible for users to log their brew day process and log the  recipes, to have a clean look with no clutter or information over load by having a user-friendly and 
+minimalistic design.
+
+### Scope
+For the users I wanted to provide them with a functional platform to keep their brew records, lessen the burden of log keeping on physical notebooks and eventually serve as a recipe storage. 
+
+### Structure
+
+
+### Skeleton
+
+
+
+
+### Surface
+
+
+## Project Setup 
+
+### Clone project:
+
+```shell
+$ git clone https://github.com/Honey20103/BrewMaster.git
+```
+
+## Features
+
+- Ability to translate the recipe to whatever the native language the user best understands
+- 
+
+## Future Features
+
+- Ability to have more profiles for multiple beer brewers to log their recipes.
+- 
+
+## Technologies
+1. HTML
+2. CSS
+3. Bootstrap 
+4. Javascript
+5. Materialize
+6. MongoDB
+7. Flask
+8. Python
+
+## Testing
+
+
+
+
+## Deployment 
+This site is hosted using GitHub pages, deployed directly from the master branch. 
+The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/Honey20103/BrewMaster.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+
+
+## Credits
+
+### Content
+The content on the site is derived from my self-made beer brewing log manuscript book. 
+
+### Media 
+
+### Acknowledgements
+
+
+
+
+
+
