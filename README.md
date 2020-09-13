@@ -39,6 +39,8 @@ can find, and in some cases I lose it and there goes my brew record, no recollec
 
 - Beer brewing is quite an expensive hobby, having to view other brewers recipes saves me the need buy brew recipes from companies.
 
+- I'd like the ability to rate the different brew recipes I make, inorder to know which ones to repeat.
+
 ### Strategy
 My goal in the design was to make it as easy as possible for users to log their brew day process and log the  recipes, to have a clean look with no clutter or information over load by having a user-friendly and 
 minimalistic design.
