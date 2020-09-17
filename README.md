@@ -108,15 +108,9 @@ Initial wireframes were done on paper and pen, I'll probably at a later stage ad
 - [MongoDB database scheme]
 
 ### Surface
+My idea for design is to have colour relating to beer such like brown, gold, or essentially brown theme color palette, this will help users associate with the act of beer brewing.
 
 
-## Project Setup 
-
-### Clone project:
-
-```shell
-$ git clone https://github.com/Honey20103/BrewMaster.git
-```
 
 ***
 
@@ -163,28 +157,28 @@ $ git clone https://github.com/Honey20103/BrewMaster.git
 
 ## Testing
 
-### Code Validation
+#### Code Validation
 
-### User Story Testing
+#### User Story Testing
 
 Read the full user story testing 
 
-### Chrome Developer Tools
+#### Chrome Developer Tools
 Constantly used to ensure the app is mobile first, and works well with all kinds of devices and provide real time ability to identify errors in my html code, and helped me troubleshoot my html/css.
 
-### Random User Testing
+#### Random User Testing
 Sending the app to friends & colleges to use, collecting their feedback for bug fixes and adjustments.
 
-### Python Testing
+#### Python Testing
 
-### MongoDB Testing
-
-
-
-### Known Bugs
+#### MongoDB Testing
 
 
-### Expected Behavior
+
+#### Known Bugs
+
+
+#### Expected Behavior
 * 
 
 *
@@ -194,7 +188,7 @@ Sending the app to friends & colleges to use, collecting their feedback for bug 
 
 ***
 
-## Deployment 
+## Deployment / Project Setup 
 
 ### Setting up a MongoDB Database
 - Set up a mongoDB database.
