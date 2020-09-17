@@ -1,4 +1,4 @@
-<img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/brewmaster1.png" style="margin: 0;">
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/images/brewmaster1.png" style="margin: 0;">
 
 # Brew Master 
 > Home beer brewing logs and recipes. 
