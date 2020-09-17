@@ -115,7 +115,7 @@ Initial wireframes were done on paper and pen, I'll probably at a later stage ad
 ### Surface
 My idea for design is to have colour relating to beer such like brown, gold, or essentially brown theme color palette, this will help users associate with the act of beer brewing.
 
-![Colour Scheme]<img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor1.png" style="margin: 0;" width="400" height="400" >
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor1.png" style="margin: 0;" width="600" height="250" >
 
 
 ![Colour Scheme](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor2.png "colour scheme2")
