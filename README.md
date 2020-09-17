@@ -75,6 +75,8 @@ can find, and in some cases I lose it and there goes my brew record, no recollec
 
 - As a user I am able to log out.
 
+- As a brewer i would like to update a recipe/log by uploading a photo of the final result of my beer at the end of the process.
+
 
 
 ### Strategy
@@ -113,6 +115,9 @@ Initial wireframes were done on paper and pen, I'll probably at a later stage ad
 ### Surface
 My idea for design is to have colour relating to beer such like brown, gold, or essentially brown theme color palette, this will help users associate with the act of beer brewing.
 
+![Colour Scheme](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor1.png "colour scheme1")
+
+![Colour Scheme](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor2.png "colour scheme2")
 
 
 ***
@@ -131,7 +136,7 @@ My idea for design is to have colour relating to beer such like brown, gold, or 
 ### Future Features
 
 - Ability to have more profiles for multiple beer brewers to log their recipes.
-- 
+- Ability to update a log by adding an image or images of the final brew result.
 
 ***
 
