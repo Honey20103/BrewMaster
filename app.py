@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import os
-from flask import Flask
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -15,7 +14,6 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/get_log')
 def test():
-    return 'Testing my flask functioning'
     return render_template("log.html", log=mongo.db.log.find())
 
 
