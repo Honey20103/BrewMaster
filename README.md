@@ -157,6 +157,7 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 * [MongoDB](https://www.mongodb.com/)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Python](https://www.python.org/)
+* [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
 
 ### Deployed
 
