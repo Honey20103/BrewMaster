@@ -11,8 +11,9 @@ app.config["MONGO_URI"] = 'mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mon
 
 mongo = PyMongo(app)
 
+
 @app.route('/')
-@app.route('/get_log')
+@app.route('/get_base')
 def test():
     return render_template("log.html", log=mongo.db.log.find())
 
