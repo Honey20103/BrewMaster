@@ -15,7 +15,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/get_base')
 def test():
-    return render_template("base.html", base=mongo.db.log.find())
+    return render_template("/flask_auth_app/project/base.html", base=mongo.db.log.find())
 
 
 if __name__ == '__main__':
