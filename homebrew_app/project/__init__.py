@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
 
-# init SQLAlchemy so we can use it later in our models
+# init SQLAlchemy for later use
 db = SQLAlchemy()
 
 def create_app():

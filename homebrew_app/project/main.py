@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import os
 from flask import Blueprint, render_template
 from . import db
 
@@ -11,3 +12,8 @@ def index():
 @main.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+if __name__ == '__main__':
+    main.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
