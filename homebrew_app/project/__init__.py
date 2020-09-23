@@ -1,3 +1,4 @@
+#!/home/gitpod/.pyenv/shims/python3
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
