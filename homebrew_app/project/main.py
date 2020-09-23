@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-from flask import Blueprint
+from flask import Blueprint, render_template
 from . import db
 
 main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
-    return "Claudette's testing"
+    return render_template('index.html')
 
-@main.route('/profile')
-def profile():
-    return 'Profile'
+@main.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')

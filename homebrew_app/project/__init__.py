@@ -1,5 +1,7 @@
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_pymongo import PyMongo
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
@@ -12,7 +14,12 @@ def create_app():
 
     db.init_app(app)
 
-    # blueprint for auth routes in our app
+    app.config["MONGO_DBNAME"] = 'brew_master'
+    app.config["MONGO_URI"] =  'mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mongodb.net/brew_master?retryWrites=true&w=majority'
+
+    mongo = PyMongo(app)
+
+    # blueprint for auth routes in app
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
 
