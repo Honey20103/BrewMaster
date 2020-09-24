@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, render_template, request, redirect, url_for, flash 
 from werkzeug.security import generate_password_hash, check_password_hash
 from .models import User
 from . import db
@@ -25,6 +25,7 @@ def signup_post():
     user = User.query.filter_by(email=email).first() 
 
     if user: # if a user is found, we want to redirect them back to signup page so user can try again
+        flash('It seems you are already a member')
         return redirect(url_for('auth.signup'))
 
     # create a new user with the form model db structure. Added password hash to prevent plaintext display.
