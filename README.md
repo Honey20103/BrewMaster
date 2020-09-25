@@ -22,7 +22,7 @@ The application will be available to the public in the future as a beer brewing 
 ***
 
 ### Website
-A live demo can be found here [here](xxx)
+A live demo can be found [here](https://the-brew-master.herokuapp.com/)
 
 [Home iPhone](xxx)
 
@@ -92,6 +92,8 @@ The scope has full CRUD functionality for logs.
 * A 'Create log' page that allows the user to add new log into their brewing diary/database.
 * An 'Edit recipe' page that allows the user to update and then saves to the database.
 * A 'Create ingredient' allows the user the ability to add new ingredients as they create a new log.
+* Ability to Create an account and store account in database
+* Functionality to login and log out of user dashboard/profile
 
 ### Structure
 
@@ -180,10 +182,14 @@ Constantly used to ensure the app is mobile-first, and works well with all kinds
 Sending the app to friends & colleges to use, collecting their feedback for bug fixes and adjustments.
 
 #### Python Testing
+PEP8online
 
 #### MongoDB Testing
 
-
+#### SQLite Testing
+Two ways to test that when a user signed up they were stored in the database or it worked;
+  - Used a sqlite database viewer to look at the row that was added to the table
+  - I also tried signing up with the same email address again, and when I got an error, I knew the first email was saved properly, also it           redirected me ssuccessfuly to the login page.
 
 #### Known Bugs
 
