@@ -3,7 +3,7 @@ import os
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
-from flask_login import login_user, logout_user, login_required
+from flask_login import login_user, logout_user, login_required, current_user
 from .models import User
 
 
@@ -69,3 +69,16 @@ def signup_post():
 def logout():
     logout_user()
     return redirect(url_for('main.index'))
+
+
+@auth.route('/cancel')
+@login_required
+def cancel():
+    if current_user is None:
+        return redirect(url_for('index'))
+    try:
+        db.session.delete(current_user)
+        db.session.commit()
+    except:
+        return 'unable to delete the user.'
+    return render_template('cancel.html')
