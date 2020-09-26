@@ -5,8 +5,11 @@
   Welcome, {{ name }}!
 </h1>
 
-
-
+{% for recipe in log %}
+    {{log.recipe_name}}
+    {{log.date}}
+    {{log.ingredients}}
+{% endfor %}
 <h6>
     <a class="button is-danger" href="{{ url_for('auth.cancel') }}">Cancel my account</a>
 </h6>

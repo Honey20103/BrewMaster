@@ -2,9 +2,10 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 from flask_login import LoginManager
 
-# init SQLAlchemy for later use
+# init SQLAlchemy for SQLite db
 db = SQLAlchemy()
 
 
