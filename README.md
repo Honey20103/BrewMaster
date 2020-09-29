@@ -209,7 +209,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 Download
 ```bash
 git clone https://github.com/Honey20103/BrewMaster.git
-cd Project-name
+cd homebrew_app
 ```
 
 Install python3
