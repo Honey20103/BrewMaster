@@ -195,7 +195,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 
 #### Expected Behavior
-* 
+* Burger menu in mobile view immediately displays nav menu without clicking the burger.
 
 *
 
@@ -206,46 +206,53 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 ## Deployment / Project Setup 
 
-### Setting up a MongoDB Database
-- Set up a MongoDB database.
-- Create the following collections: `log`, `ingredients`.
+Download
+```bash
+git clone https://github.com/Honey20103/BrewMaster.git
+cd Project-name
+```
 
-### Backend -Locally
-- Clone this directory to your local computer.
-- Create a virtual environment
-`virtualenv venv`.
-- Activate the virtual environment `source venv/bin/activate`.
-- Change to the backend folder `cd backend`.
-- Do a pip install for all dependencies & dev dependencies `pip install -e.[dev]`.
-- Create a `.env` file with the following content
-  ```
-  MONGO_URI="$MONGO_URI"
-  ```
-  where `$MONGO_URI` is the URI to your database.
-- Run the backend `flask run --reload`.
-- Leave this terminal window open and running.
+Install python3
+```bash
+#use brew
+brew install python3
+```
 
-### Frontend -Locally
-- Open a second terminal window.
-- Change to your front end directory `cd frontend`.
-- Install all dependencies `npm install`.
-- Start the frontend `npm start`.
+Install pip3
+```bash
+#use apt-get
+sudo apt install python3-pip
+```
 
+Deploy virtual environment.
+```bash
+#use pip3
+pip3 install virtualenv
+virtualenv venv
+source ./venv/bin/activiate
+```
 
-### Deploy to Heroku
-These instructions assume you have a GitHub account and a Heroku account and have set up the Heroku CLI on your computer.
-- Clone this git repository to your own github account
-- Run the following commands
-  ```bash
-  heroku apps:create $APP_NAME --region eu
-  heroku stack:set container -a $APP_NAME
-  heroku config:set -a $APP_NAME MONGO_URI="$MONGO_DB_URI"
-  ```
-  where `$APP_NAME` is the name of your Heroku app, and `$MONGO_DB_URI` is
-  your MongoDB
-- On the Heroku website, in your new app, connect to your GitHub
-- Select the repo you have cloned
-- On the deploy tab manually deploy
+Install requirements
+```bash 
+# install python requirements
+python3 -m pip install -r requirements.txt
+```
+Deploy SQLite database
+```python
+# python3
+from app import db, create_app
+db.create_all(app=create_app())
+```
+Deploy Mongo database
+```bash 
+#Setup Mongo DB account [here](https://www.mongodb.com/)
+Create a mongoDB database.
+Create two collections in it: recipes, ingredients
+```
+
+# run app
+flask run
+```
 
 ### App Link
 Find the app deployed at [this link]()

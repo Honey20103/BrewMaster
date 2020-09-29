@@ -4,7 +4,7 @@ from flask import Blueprint, render_template
 from flask_login import login_required, current_user
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
-from . import db
+from . import db, mongo
 
 
 
@@ -15,6 +15,7 @@ def index():
     return render_template('index.html')
 
 @main.route('/dashboard')
+@main.route('/get_log')
 @login_required
 def dashboard():
     return render_template('dashboard.html', name=current_user.name)

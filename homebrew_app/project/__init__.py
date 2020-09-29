@@ -5,9 +5,11 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from flask_login import LoginManager
 
-# init SQLAlchemy for SQLite db
+# initiate SQLAlchemy for SQLite db
 db = SQLAlchemy()
 
+# initiate PyMongo for mongodb
+mongo = PyMongo()
 
 def create_app():
     app = Flask(__name__)
@@ -17,6 +19,11 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 
     db.init_app(app)
+
+    app.config["MONGO_DBNAME"] = 'brew_master'
+    app.config["MONGO_URI"] = 'mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mongodb.net/brew_master?retryWrites=true&w=majority'
+
+    mongo.init_app(app)
 
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
@@ -29,10 +36,7 @@ def create_app():
         # since the user_id is just the primary key of our user table, use it in the query for the user
         return User.query.get(int(user_id))
 
-    app.config["MONGO_DBNAME"] = 'brew_master'
-    app.config["MONGO_URI"] = 'mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mongodb.net/brew_master?retryWrites=true&w=majority'
 
-    mongo = PyMongo(app)
 
     # blueprint for auth routes in app
     from .auth import auth as auth_blueprint

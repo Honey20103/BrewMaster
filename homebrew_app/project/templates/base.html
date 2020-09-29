@@ -4,12 +4,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BrewMaster</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -19,16 +20,21 @@
 			<!-- NAVBAR-->
 			<nav class="navbar">
 				<div class="container">
-					<a href="#" class="navbar-brand">
-						<!-- Logo Image -->
-						<img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/images/brewmaster3.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-						<!-- Logo Text -->
+					<!-- Logo Image -->
+					<!-- Logo Text -->
+
+					<a class="navbar-item brewmaster" href="#">
+						<img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/images/brewmaster3.png" width="112" height="28">
 						<span class="text-uppercase font-weight-bold">BREW MASTER</span>
 					</a>
-					<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+						data-target="navbarMenuHeroA">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
 
-
-					<div id="navbarMenuHeroA" class="navbar-menu">
+					<div id="navbarMenuHeroA" class="navbar-menu is-active">
 						<div class="navbar-end">
 							<a href="{{ url_for('main.index') }}" class="navbar-item">
 								Home
@@ -63,10 +69,11 @@
 		</div>
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
