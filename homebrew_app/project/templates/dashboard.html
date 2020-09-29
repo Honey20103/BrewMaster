@@ -1,18 +1,56 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  Welcome, {{ name }}!
-</h1>
+<h4 class="title is-size-4 is-capitalized has-text-grey-lighter">
+	{{ name }}'s Beer Diary!
+</h4>
+</br>
+</br>
 
-	<!---------------
+<!---------------
 {% for recipe in log %}
     {{log.recipe_name}}
     {{log.date}}
     {{log.ingredients}}
 {% endfor %}
 --->
+<ul class="collapsible popout brown-text text-darken-2">
+    {% for recipe in log%}
+	<li>
+		<div class="collapsible-header"><i class="material-icons">open_in_full</i>
+        {{log.recipe_name}} - {{log.date}}
+        </div>
+		<div class="collapsible-body brown lighten-4"><span>
+        {{log.ingredients}}
+        </span>
+        </div>
+	</li>
+    {% endfor %}
+
+	<li>
+		<div class="collapsible-header"><i class="material-icons">open_in_full</i>Second</div>
+		<div class="collapsible-body brown lighten-4"><span class="material-icons">
+local_drink
+</span><span>Lorem ipsum dolor sit amet.</span></div>
+	</li>
+	<li>
+		<div class="collapsible-header"><i class="material-icons">expand_more</i>Third</div>
+		<div class="collapsible-body brown lighten-4"><span>Lorem ipsum dolor sit amet.</span></div>
+	</li>
+</ul>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 <h6>
-    <a class="button is-danger" href="{{ url_for('auth.cancel') }}">Cancel my account</a>
+	<a class="button has-background-warning-dark has-text-weight-semibold is-uppercase is-size-7" href="{{ url_for('auth.cancel') }}">Cancel my account</a>
 </h6>
+
+
 {% endblock %}

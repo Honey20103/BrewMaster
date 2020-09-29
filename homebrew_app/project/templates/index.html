@@ -7,4 +7,11 @@
 <h2 class="subtitle">
   Brewer will enter credentials
 </h2>
+
+{% for recipe in log %}
+    {{log.recipe_name}}
+    {{log.date}}
+    {{log.ingredients}}
+{% endfor %}
+
 {% endblock %}

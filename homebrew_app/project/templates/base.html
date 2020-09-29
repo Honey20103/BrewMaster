@@ -5,13 +5,19 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BrewMaster</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<title>BrewMaster</title>
 </head>
 
 <body>
@@ -36,6 +42,7 @@
 
 					<div id="navbarMenuHeroA" class="navbar-menu">
 						<div class="navbar-end">
+                      
 							<a href="{{ url_for('main.index') }}" class="navbar-item">
 								Home
 							</a>
@@ -55,7 +62,7 @@
 								Logout
 							</a>
 							{% endif %}
-							</ul>
+							
 						</div>
 					</div>
 				</div>
@@ -68,10 +75,25 @@
 			</div>
 		</div>
 	</section>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    	<!------------------------------------------------FOOTER----------------------------------------------------->
+<footer class="page-footer brown darken-1">
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2020 BrewMaster. All Rights Reserved .
+            </div>
+          </div>
+        </footer>
+
+	<!------------------------------------------------SCRIPTS---------------------------------------------------->
+    
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+    
 	<script type="text/javascript">
 		$(document).ready(function() {
 	
@@ -84,6 +106,12 @@
 	
 	  });
 	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	    $('.collapsible').collapsible();
+	  });
+	        
 	</script>
 
 </body>
