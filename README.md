@@ -250,7 +250,8 @@ Create a mongoDB database.
 Create two collections in it: recipes, ingredients
 ```
 
-# run app
+Run app
+```bash
 flask run
 ```
 
