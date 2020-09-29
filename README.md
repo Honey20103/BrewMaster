@@ -249,7 +249,13 @@ Deploy Mongo database
 Create a mongoDB database.
 Create two collections in it: recipes, ingredients
 ```
-
+In a terminal, you can set the FLASK_APP and FLASK_DEBUG values:
+```bash
+# these gives instrcution to flask on how to load the app, it should point to the folder that holds the __init__.py.
+# or create .flaskenv file and add the below without 'export'cmd
+export FLASK_APP=project
+export FLASK_DEBUG=1
+```
 Run app
 ```bash
 flask run
