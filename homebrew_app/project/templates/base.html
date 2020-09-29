@@ -34,7 +34,7 @@
 						<span aria-hidden="true"></span>
 					</a>
 
-					<div id="navbarMenuHeroA" class="navbar-menu is-active">
+					<div id="navbarMenuHeroA" class="navbar-menu">
 						<div class="navbar-end">
 							<a href="{{ url_for('main.index') }}" class="navbar-item">
 								Home
@@ -71,8 +71,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	
+	  // Check for click events on the navbar burger icon
+	  $(".navbar-burger").click(function() {
+	
+	      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+	      $(".navbar-burger").toggleClass("is-active");
+	      $(".navbar-menu").toggleClass("is-active");
+	
+	  });
+	});
+	</script>
 
 </body>
 
