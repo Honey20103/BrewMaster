@@ -7,5 +7,17 @@ html,body {
 
 .logo {
    width: 112px;
-   height: 50px;
+   height: 28px;
+
+}
+
+.footer-copyright {
+    text-align: center;
+
+}
+
+
+h4 {
+  text-decoration: underline overline;
+  font-weight: bold;
 }

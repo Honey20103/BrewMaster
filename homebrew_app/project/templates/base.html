@@ -80,7 +80,7 @@
 <footer class="page-footer brown darken-1">
           <div class="footer-copyright">
             <div class="container">
-            &copy; 2020 BrewMaster. Website Designed & Built by Honey Claudette. All Rights Reserved .
+          &copy; 2020 BrewMaster. All Rights Reserved | Built by Honey Claudette 
             </div>
           </div>
         </footer>
@@ -93,26 +93,25 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
    
 	<script type="text/javascript">
-		
-        // Date picker functions 
-            $('.datepicker').pickadate({
-            selectMonths: true, // Creates a dropdown to control month
-            selectYears: 10, // Creates a dropdown of 10 years to control year,
-            today: 'Today',
-            clear: 'Clear',
-            close: 'Ok',
-            closeOnSelect: false // Close upon selecting a date,
-        });
-
-	        // function to fix bug within materialise for date picker
-			document.getElementById("matfix").addEventListener("click", function(e) {
-				e.stopPropagation();
-			});
-       
+			
+	        // Date picker functions 
+	            $('.datepicker').pickadate({
+	            selectMonths: true, // Creates a dropdown to control month
+	            selectYears: 10, // Creates a dropdown of 10 years to control year,
+	            today: 'Today',
+	            clear: 'Clear',
+	            close: 'Ok',
+	            closeOnSelect: false // Close upon selecting a date,
+	        });
+	
+		        // function to fix bug within materialise for date picker
+				document.getElementById("matfix").addEventListener("click", function(e) {
+					e.stopPropagation();
+				});
+	       
 	</script>
-     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	{% block scripts %} {% endblock %}
-
 </body>
 
 </html>

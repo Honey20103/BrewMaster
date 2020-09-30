@@ -11,10 +11,11 @@ $(document).ready(function() {
 	    
 	    
 	    // Function to collapse dashboard accordion
-			$(document).ready(function(){
 				    $('.collapsible').collapsible();
-				  });
-				        
+                    
+
+
+                    /* NOT WORKING FOR SOME REASON FROM HERE
         // Date picker functions 
             $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month
@@ -29,9 +30,6 @@ $(document).ready(function() {
 			document.getElementById("matfix").addEventListener("click", function(e) {
 				e.stopPropagation();
 			});
+       */
+      
        
-       // Initialise list selection in form for ingredients
-
-    $(document).ready(function(){
-    $('select').formSelect();
-  });
