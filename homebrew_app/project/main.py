@@ -20,6 +20,11 @@ def index():
 def dashboard():
     return render_template('dashboard.html', name=current_user.name)
 
+#@main.route('/add_log')
+#@login_required
+#def add_log():
+ #   return render_template(addlog.html)
+
 #log=mongo.db.log.find()
 
 if __name__ == '__main__':

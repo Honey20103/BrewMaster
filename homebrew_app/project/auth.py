@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, logout_user, login_required, current_user
 from .models import User
-
+from . import mongo
 
 auth = Blueprint('auth', __name__)
 
@@ -82,3 +82,13 @@ def cancel():
     except:
         return 'unable to delete the user.'
     return render_template('cancel.html')
+
+@auth.route('/addlog')
+@login_required
+def addlog():
+    return render_template('addlog.html', log=mongo.db.log.find())
+
+#@auth.route('/get_log')
+#@login_required
+#def get_log():
+ #   return render_template('dashboard.html', log=mongo.db.log.find())

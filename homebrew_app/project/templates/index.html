@@ -1,17 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  BrewMaster Home
-</h1>
-<h2 class="subtitle">
-  Brewer will enter credentials
-</h2>
+<div class="col s12 m2">
+	<h1 class="h2 z-depth-3 has-text-centered lime-text text-darken-4">
+		Welcome to BrewMaster
+	</h1>
+</div>
+<br>
 
-{% for recipe in log %}
-    {{log.recipe_name}}
-    {{log.date}}
-    {{log.ingredients}}
-{% endfor %}
+
+<h6 class="subtitle has-text-centered">
+  About the site to be entered here
+</h6>
 
 {% endblock %}

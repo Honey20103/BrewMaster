@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h4 class="title is-size-4 is-capitalized has-text-grey-lighter">
+<h4 class="title is-size-4 is-capitalized has-text-grey-lighter has-text-centered">
 	{{ name }}'s Beer Diary!
 </h4>
 </br>
 </br>
 
-<!---------------
+<!--
 {% for recipe in log %}
     {{log.recipe_name}}
     {{log.date}}
     {{log.ingredients}}
-{% endfor %}
---->
+{% endfor %} -->
+
+
+<a class="waves-effect lime darken-4 btn" href="{{ url_for('auth.addlog') }}"><i class="material-icons left">local_drink</i>Add Brew-Day Log</a>
+	</br>
+
+
 <ul class="collapsible popout brown-text text-darken-2">
     {% for recipe in log%}
 	<li>
@@ -26,7 +31,7 @@
         </div>
 	</li>
     {% endfor %}
-
+</br>
 	<li>
 		<div class="collapsible-header"><i class="material-icons">open_in_full</i>Second</div>
 		<div class="collapsible-body brown lighten-4"><span class="material-icons">
@@ -48,9 +53,16 @@ local_drink
 </br>
 </br>
 </br>
-<h6>
-	<a class="button has-background-warning-dark has-text-weight-semibold is-uppercase is-size-7" href="{{ url_for('auth.cancel') }}">Cancel my account</a>
-</h6>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<a class="waves-effect orange lighten-2 btn" href="{{ url_for('auth.cancel') }}">Disable Account</a>
+        
+
 
 
 {% endblock %}
