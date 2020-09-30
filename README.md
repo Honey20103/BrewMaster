@@ -152,6 +152,7 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 * [Bootstrap](https://getbootstrap.com/)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [Materialize](https://materializecss.com/)
+* [Bulma](https://bulma.io/)
 
 
 ### Backend
@@ -277,7 +278,7 @@ The content on the site is derived from my boyfriend's self-made beer brewing lo
 - The logo for the project was taken from the [pngtree](https://pngtree.com/) site. 
 
 ### Acknowledgements
-- I was inspired to create this website from observing the struggles I watched my boyfriends encounter by trying to keep and maintain a manual notebook to store his brew day info or records.
+- I was inspired to create this website from observing the struggles I watched my boyfriends encounter by trying to keep and maintain a manual notebook to store his brew day info or records, thank you Robert Flink.
 
 
 
