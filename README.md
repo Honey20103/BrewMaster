@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/images/brewmaster3.png" style="margin: 0;" width="300" height="200" >
+  <img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/brewmaster3.png" style="margin: 0;" width="300" height="200" >
 </p>
 
 # Brew Master 
