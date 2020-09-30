@@ -197,7 +197,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 #### Expected Behavior
 * Burger menu in mobile view immediately displays nav menu without clicking the burger.(FIXED)
 
-* Logo Image will load.
+* Logo Image and favicon image will not load.
 
 *
 
