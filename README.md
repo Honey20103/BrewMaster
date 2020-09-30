@@ -199,7 +199,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 #### Expected Behavior
 * Burger menu in mobile view immediately displays nav menu without clicking the burger.(FIXED)
 
-* Logo Image and favicon image will not load.
+* Logo Image and favicon image will not load. (FIXED)
 
 * JS for datepicker functionality will not initiate from static/js/script.js file, it only ssuccessfuly initiates js code is directly in base.html file
 
