@@ -2,14 +2,23 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+ 
 }
 
 .logo {
-  height: 50px;
-  font-family: "Playfair Display", serif;
+  height: 100px;
+  width: 100px;
+  
 }
 
 .footer-copyright {
   text-align: center;
+}
+/* font-family: "Open Sans", sans-serif;*/
+
+.responsive {
+    height: 50%;
+    width: 50%;
+    align-content: center;
+    
 }
