@@ -1,22 +1,15 @@
-html,body {
+html,
+body {
   margin: 0;
   height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
-
 .logo {
-   width: 112px;
-   height: 28px;
-
+  height: 50px;
+  font-family: "Playfair Display", serif;
 }
 
 .footer-copyright {
-    text-align: center;
-
+  text-align: center;
 }
-
-
-/*h4 {
-  text-decoration: underline overline;
-  font-weight: bold;
-}*/
