@@ -15,19 +15,15 @@ def index():
     return render_template('index.html')
 
 @main.route('/dashboard')
-@main.route('/get_log')
 @login_required
 def dashboard():
-    return render_template('dashboard.html', name=current_user.name)
+    return render_template('dashboard.html', name=current_user.name, dashboard_data=mongo.db.logs.find())
 
-#@main.route('/add_log')
-#@login_required
-#def add_log():
- #   return render_template(addlog.html)
+
 
 #log=mongo.db.log.find()
 
 if __name__ == '__main__':
-    main.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
+    main.run(host=os.environ.get('IP', '0.0.0.0'),
+            port=int(os.environ.get('PORT', '5000')),
             debug=True)

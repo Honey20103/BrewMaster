@@ -1,5 +1,4 @@
 html,body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   height: 100%;
 }
@@ -17,7 +16,7 @@ html,body {
 }
 
 
-h4 {
+/*h4 {
   text-decoration: underline overline;
   font-weight: bold;
-}
+}*/

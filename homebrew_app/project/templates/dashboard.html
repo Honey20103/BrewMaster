@@ -1,37 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h4 class="title is-size-4 is-capitalized has-text-grey-lighter has-text-centered">
+<h4 class="title  is-capitalized has-text-grey-lighter has-text-centered">
 	{{ name }}'s Beer Diary!
 </h4>
 </br>
 </br>
 
-<!--
-{% for recipe in log %}
-    {{log.recipe_name}}
-    {{log.date}}
-    {{log.ingredients}}
-{% endfor %} -->
 
-
-<a class="waves-effect lime darken-4 btn" href="{{ url_for('auth.addlog') }}"><i class="material-icons left">local_drink</i>Add Brew-Day Log</a>
-	</br>
+<a class="waves-effect lime darken-4 btn"
+	href="{{ url_for('auth.addlog') }}"><i class="material-icons left">local_drink</i>Add Brew-Day Log</a>
+</br>
 
 
 <ul class="collapsible popout brown-text text-darken-2">
-    {% for recipe in log%}
+	{% for recipe in dashboard_data%}
 	<li>
 		<div class="collapsible-header"><i class="material-icons">open_in_full</i>
-        {{log.recipe_name}} - {{log.date}}
-        </div>
+			{{recipe.recipe_name}} - {{recipe.brew_date}}
+		</div>
 		<div class="collapsible-body brown lighten-4"><span>
-        {{log.ingredients}}
+        {{recipe.ingredients}}
         </span>
-        </div>
+		</div>
 	</li>
-    {% endfor %}
-</br>
+	{% endfor %}
+	</br>
 	<li>
 		<div class="collapsible-header"><i class="material-icons">open_in_full</i>Second</div>
 		<div class="collapsible-body brown lighten-4"><span class="material-icons">
@@ -61,7 +55,7 @@ local_drink
 </br>
 </br>
 <a class="waves-effect orange lighten-2 btn" href="{{ url_for('auth.cancel') }}">Disable Account</a>
-        
+
 
 
 

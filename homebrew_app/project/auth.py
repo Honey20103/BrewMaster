@@ -86,9 +86,5 @@ def cancel():
 @auth.route('/addlog')
 @login_required
 def addlog():
-    return render_template('addlog.html', log=mongo.db.log.find())
+    return render_template('addlog.html')
 
-#@auth.route('/get_log')
-#@login_required
-#def get_log():
- #   return render_template('dashboard.html', log=mongo.db.log.find())
