@@ -191,7 +191,7 @@ PEP8online
 #### SQLite Testing
 Two ways to test that when a user signed up they were stored in the database or it worked;
   - Used a sqlite database viewer to look at the row that was added to the table
-  - I also tried signing up with the same email address again, and when I got an error, I knew the first email was saved properly, also it           redirected me ssuccessfuly to the login page.
+  - I also tried signing up with the same email address again, and when I got an error, I knew the first email was saved properly, also it   redirected me ssuccessfuly to the login page.
 
 #### Known Bugs
 
@@ -201,7 +201,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 * Logo Image and favicon image will not load.
 
-*
+* JS for datepicker functionality will not initiate from static/js/script.js file, it only ssuccessfuly initiates js code is directly in base.html file
 
 
 ***

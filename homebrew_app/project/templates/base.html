@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,8 +14,9 @@
 
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-
-	<link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="static/css/images/favicon.ico">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+	{% block styles %} {% endblock %}
 	<title>BrewMaster</title>
 </head>
 
@@ -29,8 +29,8 @@
 					<!-- Logo Image -->
 					<!-- Logo Text -->
 
-					<a class="navbar-item brewmaster" href="#">
-						<img src="https://github.com/Honey20103/BrewMaster/blob/master/assets/images/brewmaster3.png" width="112" height="28">
+					<a class="navbar-item" href="{{ url_for('main.index') }}">
+						<img class="logo" src="{{ url_for('static', filename='css/images/brewmaster3.png') }}">
 						<span class="text-uppercase font-weight-bold">BREW MASTER</span>
 					</a>
 					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -68,7 +68,7 @@
 				</div>
 			</nav>
 		</div>
-
+<!------------------------------------------------BODY (template fill in here)----------------------------------------------------->
 		<div class="hero-body">
 			<div class="container centered">
 				{% block content %} {% endblock %}
@@ -80,7 +80,7 @@
 <footer class="page-footer brown darken-1">
           <div class="footer-copyright">
             <div class="container">
-            &copy; 2020 BrewMaster. All Rights Reserved .
+            &copy; 2020 BrewMaster. Website Designed & Built by Honey Claudette. All Rights Reserved .
             </div>
           </div>
         </footer>
@@ -91,28 +91,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   
 	<script type="text/javascript">
-		$(document).ready(function() {
-			
-			  // Check for click events on the navbar burger icon
-			  $(".navbar-burger").click(function() {
-			
-			      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			      $(".navbar-burger").toggleClass("is-active");
-			      $(".navbar-menu").toggleClass("is-active");
-			});
-			});
-	    
-	    
-	    // Function to collapse dashboard accordion
-			$(document).ready(function(){
-				    $('.collapsible').collapsible();
-				  });
-				        
+		
         // Date picker functions 
             $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month
-            selectYears: 15, // Creates a dropdown of 15 years to control year,
+            selectYears: 10, // Creates a dropdown of 10 years to control year,
             today: 'Today',
             clear: 'Clear',
             close: 'Ok',
@@ -124,12 +109,9 @@
 				e.stopPropagation();
 			});
        
-       // Initialise list selection in form for ingredients
-
-    $(document).ready(function(){
-    $('select').formSelect();
-  });
 	</script>
+     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	{% block scripts %} {% endblock %}
 
 </body>
 
