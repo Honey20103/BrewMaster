@@ -106,7 +106,26 @@ def addlog():
         return redirect(url_for("main.dashboard"))
     return render_template('addlog.html')
 
+
 @auth.route("/edit_log/<log_id>", methods=["GET", "POST"])
+@login_required
 def edit_log(log_id):
+    if request.method == "POST":
+        update = {
+            "recipe_name": request.form.get("recipe_name"),
+            "brew_date": request.form.get("brew_date"),
+            "duration": request.form.get("duration"),
+            "alcohol": request.form.get("alcohol"),
+            "ingredients": request.form.get("ingredients"),
+            "mashing": request.form.get("mashing"),
+            "lautering": request.form.get("lautering"),
+            "boiling": request.form.get("boiling"),
+            "cooling": request.form.get("cooling"),
+            "fermentation": request.form.get("fermentation"),
+            "maturing": request.form.get("maturing"),
+        }
+        mongo.db.logs.update({"_id": ObjectId(log_id)}, update)
+        flash("Log Successfully Updated")
+
     the_log = mongo.db.log.find_one({"_id": ObjectId(log_id)})
     return render_template('edit_log.html', log=the_log)

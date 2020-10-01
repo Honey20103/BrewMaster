@@ -141,6 +141,7 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 - Social sharing buttons: Users will be able to share beer recipesto their social media channels via the social sharing buttons provided. 
 - Ability to have more profiles for multiple beer brewers to log their recipes.
 - Ability to update a log by adding an image or images of the final brew result.
+- List logs in dashboard according to date of brew and not when entered.
 
 ***
 

@@ -8,18 +8,18 @@
 
 <div class="row card-panel brown lighten-5 brown-text text-darken-4">
 
-	<form action="{{ url_for('auth.edit_log', log_id=log.id) }}" method="POST" class="col s12">
+	<form method="POST" action="{{ url_for('auth.edit_log', log_id=log.id) }}" class="col s12">
 		<!---   Add recipe name & datepicker      -->
 		<div class="row">
 			<div class="input-field col s6 m4 l3">
 				<i class="material-icons prefix">assignment</i>
-				<input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{log.recipe_name}}">
+				<input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{log.recipe_name}}" required>
 				<label for="icon_prefix">Recipe Name</label>
 			</div>
 
 			<div class="input-field col s6 m4 l3" id="matfix">
 				<i class="material-icons prefix">today</i>
-				<input id="brew_date" type="text" class="datepicker" name="brew_date" value="{{ log.brew_date }}">
+				<input id="brew_date" type="text" class="datepicker" name="brew_date" value="{{ log.brew_date }}" required>
 				<label for="icon_prefix">Brew Date</label>
 			</div>
 		</div>
@@ -27,12 +27,12 @@
 		<div class="row">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">timer</i>
-				<input id="duration" name="duration" type="text" value="{{ log.duration }}">
+				<input id="duration" name="duration" type="text" value="{{ log.duration }}" required>
 				<label for="icon_prefix">Duration (hours)</label>
 			</div>
 			<div class="input-field col s6">
 				<i class="material-icons prefix">local_bar</i>
-				<input id="alcohol" name="alcohol" type="text" value="{{ log.alcohol }}">
+				<input id="alcohol" name="alcohol" type="text" value="{{ log.alcohol }}" required>
 				<label for="icon_prefix">Alcohol %</label>
 			</div>
 		</div>
