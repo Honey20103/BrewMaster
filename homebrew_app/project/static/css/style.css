@@ -27,7 +27,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(43, 40, 37, 0.116);
+  background-color: rgba(65, 48, 13, 0.959);
 }
 
 .container:hover .overlay {
