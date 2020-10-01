@@ -18,9 +18,19 @@
 <ul class="collapsible popout brown-text text-darken-2">
 	{% for recipe in dashboard_data%}
 	<li>
-		<div class="collapsible-header"><i class="material-icons">expand_more</i>
-			{{recipe.recipe_name}}   - {{recipe.brew_date}}           ----------------------------------------   {{recipe.alcohol}}
+    <!--  Top panel of list with beer name, date and  alcohol% -->
+		<div class="collapsible-header">
+            <div class="col s3">
+                <i class="fas fa-caret-down"></i>
+                <a class="waves-effect waves-light btn lime darken-4" href="">Edit</a>
+                <a href="" class="waves-effect waves-light btn brown darken-3">Kill</a>
+            </div>
+            <div class="col s6">
+                <strong>{{recipe.recipe_name}}</strong>   -  {{recipe.brew_date}} 
+            </div>
+            <div class="col s3">{{recipe.alcohol}}</div>
 		</div>
+         <!--  Inner collapse area with more dets-->
 		<div class="collapsible-body brown lighten-4"><span>
         <h3 class="subtitle">Brew Duration: {{recipe.duration}}</h3> 
         <h3 class="subtitle">Ingredients</h3>
