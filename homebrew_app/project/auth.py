@@ -127,5 +127,12 @@ def edit_log(log_id):
         mongo.db.logs.update({"_id": ObjectId(log_id)}, update)
         flash("Log Successfully Updated")
 
-    the_log = mongo.db.log.find_one({"_id": ObjectId(log_id)})
+    the_log = mongo.db.logs.find_one({"_id": ObjectId(log_id)})
     return render_template('edit_log.html', log=the_log)
+
+@auth.route('/delete_log/<log_id>')
+@login_required
+def delete_log(log_id):
+    mongo.db.logs.remove({"_id": ObjectId(log_id)})
+    flash("Brew Log is Deleted")
+    return redirect(url_for("main.dashboard"))

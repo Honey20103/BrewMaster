@@ -23,7 +23,7 @@
             <div class="col s3">
                 <i class="fas fa-caret-down"></i>
                 <a class="waves-effect waves-light btn lime darken-4" href="{{ url_for('auth.edit_log', log_id=recipe._id) }}">Edit</a>
-                <a href="" class="waves-effect waves-light btn brown darken-3">Kill</a>
+                <a href="{{ url_for('auth.delete_log', log_id=recipe._id) }}" class="waves-effect waves-light btn brown darken-3">Kill</a>
             </div>
             <div class="col s6">
                 <strong>{{recipe.recipe_name}}</strong>   -  {{recipe.brew_date}} 
