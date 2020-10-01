@@ -89,9 +89,8 @@ The scope has full CRUD functionality for logs.
 
 * A landing page that acts as a brewing diary, showing all logs recorded by the user.
 * A 'Log' page that displays the recipe and process of the beer they made.
-* A 'Create log' page that allows the user to add new log into their brewing diary/database.
-* An 'Edit recipe' page that allows the user to update and then saves to the database.
-* A 'Create ingredient' allows the user the ability to add new ingredients as they create a new log.
+* A 'Add log' page that allows the user to add new log into their brewing diary/database.
+* An 'Edit log' page that allows the user to update and then saves to the database.
 * Ability to Create an account and store account in database
 * Functionality to login and log out of user dashboard/profile
 
@@ -112,15 +111,17 @@ Initial wireframes were done on paper and pen, I'll probably at a later stage ad
 
 ### Database Schema
 
-- [MongoDB database scheme]
+Choose to work with both relational and non-relational databases namely SQLite3 and MongoDB. I used MongoBD for the brew data forms as its schema-less and  presents a clean document option JSON style documents. It seemed suitable for this use case of a diary log. As for the SQLite DB i chose to use it to test out working with a relational and the benefits of it being lightweight in terms of setup and database administration(no actual server or configurations required) and it fit my needs to be able to create to a database to store user info and fetch altogether, which would be advantageous when it comes to mobile devices considering the database is integrated with the app, meaning less lag(mobile first approach).
+
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/database_schema.png" style="margin: 0;" width="300" height="200" >
+
 
 ### Surface
-My idea for the design is to have colour relating to beer such as brown, gold, or essentially brown theme colour palette, this will help users associate with the act of beer brewing.
+My idea for the design is to have colour relating to beer such as brown, gold, orange or essentially brown theme colour palette, this will help users associate with the act of beer brewing.
 
 <img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor1.png" style="margin: 0;" width="600" height="250" >
 
 
-![Colour Scheme](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/themecolor2.png "colour scheme2")
 
 
 ***
@@ -130,18 +131,19 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 ### Existing Features
 
 * **User Accounts** - Signup for an account, log-in and log-out.
-* **Rating system** - The ability to star rate favourite brew day recipe.
 * **Log/Recipe page** - When a recipe or brew log is selected the user will be presented with the page for that recipe. 
 * **Add Log/Recipe** - The user can go to the menu and open the add log brew day page, providing the user with a diary or digital like a notebook to log their brew day content and add them to the database.
 * **Add Ingredient** - Ingredient options will be available however if an option is not found, the user can add a new ingredient to the database.
 * **Edit & Delete ingredients** - Ability for the user to edit and delete ingredients.
+* **Multiple users login** - Ability to have more profiles for multiple beer brewers to log their recipes.
 
 ### Future Features
 
-- Social sharing buttons: Users will be able to share beer recipesto their social media channels via the social sharing buttons provided. 
-- Ability to have more profiles for multiple beer brewers to log their recipes.
-- Ability to update a log by adding an image or images of the final brew result.
-- List logs in dashboard according to date of brew and not when entered.
+- **Social sharing buttons**: Users will be able to share beer recipes to their social media channels via the social sharing buttons provided. 
+- **Brew Images** Ability to add/update a log by adding an image or images of the final brew result.
+- **Log order arrangement**List logs in dashboard according to date of brew and not when entered.
+- **Rating system** - The ability to star rate favourite brew day recipe
+- **View ther brewers logs** - Ability for brewers to unhide or unlock certain logs to be publicly visible to other brewers on the app.
 
 ***
 
@@ -174,15 +176,29 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 
 #### Code Validation
 
+#### Devices used to Test
+
+The BrewMaster App was test with the following devices:
+
+MacBook Pro Laptop
+HP Pavilion Laptop
+Samsung Galaxy S9 Mobile
+iPhone XS Max
+
+Google Chrome
+Microsoft Edge
+Mozilla Firefox
+
+
 #### User Story Testing
 
-Read the full user story testing 
+The full user story testing can be found [here]().
 
 #### Chrome Developer Tools
 Constantly used to ensure the app is mobile-first, and works well with all kinds of devices and provide real-time ability to identify errors in my HTML code, and helped me troubleshoot my HTML/CSS.
 
 #### Random User Testing
-Sending the app to friends & colleges to use, collecting their feedback for bug fixes and adjustments.
+Sent the app to boyfriend and colleagues to use, collecting their feedback for bug fixes and adjustments.
 
 #### Python Testing
 PEP8online
@@ -275,12 +291,21 @@ Find the app deployed at [this link]()
 ### Content
 The content on the site is derived from my boyfriend's self-made beer brewing log manuscript book. 
 
+### Code
+[Hover CSS effect on homepage: ](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade) This package of CSS was used to render the behaviour of the homepage front image when hovering the image, to show the about of the app.
+
+[Blueprints and configurations in application:](https://www.youtube.com/watch?v=Wfx4YBzg16s) This tutorial helped me use Application Factory, which allows to easily create multiple instances of the app with different configurations. The Blueprints restructuring split up my app into more manageable sections i.e Auth.py, main.py and _init_.py. 
+
+[Authentication to App:](https://www.digitalocean.com/community/tutorials) Tutorial helped with setting up authentication to webapp.
+
 ### Media 
 
 - The logo for the project was taken from the [pngtree](https://pngtree.com/) site. 
 
 ### Acknowledgements
-- I was inspired to create this website from observing the struggles I watched my boyfriends encounter by trying to keep and maintain a manual notebook to store his brew day info or records, thank you Robert Flink.
+- I was inspired to create this website from observing the struggles I watched my boyfriends encounter by trying to keep and maintain a manual notebook to store his brew day info or records, especially thankful for the help with testing functionality of the app. Thank you Robert Flink.
+
+- I'd like to thank tutor Tim Nelson at CodeInstitute who helped unblock me when i was completely stuck and providing extra helpful resources.
 
 
 
