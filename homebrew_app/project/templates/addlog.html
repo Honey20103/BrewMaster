@@ -3,12 +3,12 @@
 {% block content %}
 
 {% with messages = get_flashed_messages() %}
-		{% if messages %}
-		<div class="notification brown lighten-5 brown-text text-darken-4">
-			{{ messages[0] }}
-		</div>
-		{% endif %}
-		{% endwith %}
+{% if messages %}
+<div class="notification brown lighten-5 brown-text text-darken-4">
+	{{ messages[0] }}
+</div>
+{% endif %}
+{% endwith %}
 <br>
 <br>
 
@@ -98,17 +98,17 @@
 				<label for="icon_telephone">Maturation Step</label>
 			</div>
 		</div>
-        <!---   Submission button     -->
-        <div class="row">
-        <div class="col s12 center-align">
-        <button type="submit" class="btn-large brown darken-4 text-shadow">
+		<!---   Submission button     -->
+		<div class="row">
+			<div class="col s12 center-align">
+				<button type="submit" class="btn-large brown darken-4 text-shadow">
             Add Log <i class="fas fa-plus-square right"></i>
         </button>
-        </div>
-        </div>
+			</div>
+		</div>
 
 
-</form>
+	</form>
 </div>
 
 {% endblock %}

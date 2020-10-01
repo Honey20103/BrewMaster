@@ -27,7 +27,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(65, 48, 13, 0.959);
+  background-color: rgba(43, 40, 37, 0.116);
 }
 
 .container:hover .overlay {
@@ -48,7 +48,7 @@ body {
 
 .text h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 
@@ -58,7 +58,7 @@ body {
 /* LOGO */
 .logo {
   height: 60px;
-  width: 50px;
+  width: 60px;
 }
 
 .footer-copyright {

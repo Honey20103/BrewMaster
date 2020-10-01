@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import os
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
@@ -103,7 +102,7 @@ def addlog():
             "maturing": request.form.get("maturing"),
         }
         mongo.db.logs.insert_one(log)
-        flash('Log Successfully Added','flashcolor')
+        flash('Log Successfully Added', 'flashcolor')
         return redirect(url_for("main.dashboard"))
     return render_template('addlog.html')
 
@@ -126,7 +125,7 @@ def edit_log(log_id):
             "maturing": request.form.get("maturing"),
         }
         mongo.db.logs.update({"_id": ObjectId(log_id)}, update)
-        flash("Log Successfully Updated",'flashcolor')
+        flash("Log Successfully Updated", 'flashcolor')
 
     the_log = mongo.db.logs.find_one({"_id": ObjectId(log_id)})
     return render_template('edit_log.html', log=the_log)
@@ -136,5 +135,5 @@ def edit_log(log_id):
 @login_required
 def delete_log(log_id):
     mongo.db.logs.remove({"_id": ObjectId(log_id)})
-    flash("Brew Log is Deleted",'flashcolor')
+    flash("Brew Log is Deleted", 'flashcolor')
     return redirect(url_for("main.dashboard"))

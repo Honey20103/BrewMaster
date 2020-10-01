@@ -2,17 +2,17 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
 from flask_login import LoginManager
 from os import path
 if path.exists("env.py"):
-  import env 
+    import env
 
 # initiate SQLAlchemy for SQLite db
 db = SQLAlchemy()
 
 # initiate PyMongo for mongodb
 mongo = PyMongo()
+
 
 def create_app():
     app = Flask(__name__)
@@ -37,8 +37,6 @@ def create_app():
     def load_user(user_id):
         # since the user_id is just the primary key of our user table, use it in the query for the user
         return User.query.get(int(user_id))
-
-
 
     # blueprint for auth routes in app
     from .auth import auth as auth_blueprint

@@ -3,14 +3,18 @@
 {% block content %}
 
 <div class="container">
-<a class="responsive" href="{{ url_for('main.index') }}">
-  <img src="{{ url_for('static', filename='images/brewmaster3.1.png') }}" alt="BrewMaster" class="image">
+	<a class="responsive" href="{{ url_for('main.index') }}">
+		<img src="{{ url_for('static', filename='images/brewmaster3.1.png') }}" alt="BrewMaster" class="image">
 </a>
-  <div class="overlay">
-    <div class="text"> <h2> Welcome to BrewMaster</h2>
-    A web application focused on offering passionate home beer brewers a platform they could utilise to log the entire process and steps taken during the brew day, helping imrove brewing process and beer batches.
-    </div>
-  </div>
+		<div class="overlay">
+			<div class="text col6">
+				<h2> Welcome to BrewMaster</h2>
+				<p>A web application focused on offering passionate</p>
+                <p> home beer brewers a platform they could utilise</p>
+                <p>to log the entire process and steps taken during</p>
+                <p>the brew day, helping imrove brewing process and beer batches.</p>
+			</div>
+		</div>
 </div>
 
 

@@ -1,3 +1,3 @@
 __pycache__
-.flaskenv
+db.sqlite
 env.py

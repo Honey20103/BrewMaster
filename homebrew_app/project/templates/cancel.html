@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h3 class="title center-align">
-  Sad to see you leave brewbuddy, You are always welcome back!!
-</h3>
-
+<div class="container">
+	<img src="{{ url_for('static', filename='images/brewmaster2.png') }}" alt="BrewMaster" class="image">
+	<h3 class="title center-align">
+		Sad to see you leave brewbuddy, You are always welcome back!!
+	</h3>
+</div>
 {% endblock %}

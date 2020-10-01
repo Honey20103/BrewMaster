@@ -3,11 +3,11 @@
 <br>
 {% with messages = get_flashed_messages() %}
 		{% if messages %}
-		<div class="notification brown lighten-5 brown-text text-darken-4">
-			{{ messages[0] }}
-		</div>
-		{% endif %}
-		{% endwith %}
+<div class="notification brown lighten-5 brown-text text-darken-4">
+	{{ messages[0] }}
+</div>
+{% endif %}
+{% endwith %}
 <h2 class="title brown-text text-lighten-5 center-align"> Edit Brew Log</h2>
 
 <br>
@@ -95,22 +95,22 @@
 				<label for="icon_telephone">Maturation Step</label>
 			</div>
 		</div>
-     
-        <!---   SUbmission button     -->
-        <div class="row">
-        <div class="col s12 center-align">
-        <!-- cancel update button-->
-        <a href="{{ url_for('main.dashboard') }}" class="btn-large deep-orange darken-3 text-shadow">
-            Cancel <i class="fas fa-times-circle"></i>
-            </a>
-        <button type="submit" class="btn-large brown darken-4 text-shadow">
+
+		<!---   SUbmission button     -->
+		<div class="row">
+			<div class="col s12 center-align">
+				<!-- cancel update button-->
+				<a href="{{ url_for('main.dashboard') }}" class="btn-large deep-orange darken-3 text-shadow">
+					Cancel <i class="fas fa-times-circle"></i>
+				</a>
+				<button type="submit" class="btn-large brown darken-4 text-shadow">
             Update Log <i class="fas fa-edit right"></i>
         </button>
-        </div>
-        </div>
+			</div>
+		</div>
 
 
-</form>
+	</form>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {% endblock %}

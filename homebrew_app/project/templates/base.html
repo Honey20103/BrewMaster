@@ -10,14 +10,14 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link
+	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
 		rel="stylesheet" />
 
 
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
 	{% block styles %} {% endblock %}
 	<title>BrewMaster</title>
@@ -45,7 +45,7 @@
 
 					<div id="navbarMenuHeroA" class="navbar-menu">
 						<div class="navbar-end">
-                      
+
 							<a href="{{ url_for('main.index') }}" class="navbar-item">
 								Home
 							</a>
@@ -65,13 +65,13 @@
 								Logout
 							</a>
 							{% endif %}
-							
+
 						</div>
 					</div>
 				</div>
 			</nav>
 		</div>
-<!------------------------------------------------BODY (template fill in here)----------------------------------------------------->
+		<!------------------------------------------------BODY (template fill in here)----------------------------------------------------->
 		<div class="hero-body">
 			<div class="container centered">
 				{% block content %} {% endblock %}
@@ -79,14 +79,14 @@
 		</div>
 	</section>
 
-    	<!------------------------------------------------FOOTER----------------------------------------------------->
-<footer class="page-footer brown darken-1">
-          <div class="footer-copyright">
-            <div class="container">
-          &copy; 2020 BrewMaster. All Rights Reserved | Built by Honey Claudette 
-            </div>
-          </div>
-        </footer>
+	<!------------------------------------------------FOOTER----------------------------------------------------->
+	<footer class="page-footer brown darken-1">
+		<div class="footer-copyright">
+			<div class="container">
+				&copy; 2020 BrewMaster. All Rights Reserved | Built by Honey Claudette
+			</div>
+		</div>
+	</footer>
 
 	<!------------------------------------------------SCRIPTS---------------------------------------------------->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -94,10 +94,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-   
+
 	<script type="text/javascript">
-			
-	        // Date picker functions 
+		// Date picker functions 
 	            $('.datepicker').pickadate({
 	            selectMonths: true, // Creates a dropdown to control month
 	            selectYears: 10, // Creates a dropdown of 10 years to control year,
@@ -113,7 +112,7 @@
 				});
 	       
 	</script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	{% block scripts %} {% endblock %}
 </body>
 
