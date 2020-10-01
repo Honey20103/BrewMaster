@@ -11,31 +11,53 @@
 <a class="waves-effect lime darken-4 btn"
 	href="{{ url_for('auth.addlog') }}"><i class="material-icons left">local_drink</i>Add Brew-Day Log</a>
 <br>
+<br>
+<br>
 
 
 <ul class="collapsible popout brown-text text-darken-2">
 	{% for recipe in dashboard_data%}
 	<li>
-		<div class="collapsible-header"><i class="material-icons">open_in_full</i>
-			{{recipe.recipe_name}} - {{recipe.brew_date}}
+		<div class="collapsible-header"><i class="material-icons">expand_more</i>
+			{{recipe.recipe_name}}   - {{recipe.brew_date}}           ----------------------------------------   {{recipe.alcohol}}
 		</div>
 		<div class="collapsible-body brown lighten-4"><span>
+        <h3 class="subtitle">Brew Duration: {{recipe.duration}}</h3> 
+        <h3 class="subtitle">Ingredients</h3>
         {{recipe.ingredients}}
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="subtitle brown-text text-darken-2">STEPS & PROCEDURE<h1>
+        <h3 class="subtitle">Mashing</h3>
+        {{recipe.mashing}}
+        <br>
+        <br>
+        <h3 class="subtitle">Lautering</h3>
+        {{recipe.lautering}}
+        <br>
+        <br>
+        <h3 class="subtitle">Boiling</h3>
+        {{recipe.boiling}}
+        <br>
+        <br>
+        <h3 class="subtitle">Cooling</h3>
+        {{recipe.cooling}}
+        <br>
+        <br>
+        <h3 class="subtitle">Fermentation</h3>
+        {{recipe.fermentation}}
+        <br>
+        <br>
+        <h3 class="subtitle">Maturation</h3>
+        {{recipe.maturing}}
+        <br>
+        <br>
         </span>
 		</div>
 	</li>
 	{% endfor %}
-	<br>
-	<li>
-		<div class="collapsible-header"><i class="material-icons">open_in_full</i>Second</div>
-		<div class="collapsible-body brown lighten-4"><span class="material-icons">
-local_drink
-</span><span>Lorem ipsum dolor sit amet.</span></div>
-	</li>
-	<li>
-		<div class="collapsible-header"><i class="material-icons">expand_more</i>Third</div>
-		<div class="collapsible-body brown lighten-4"><span>Lorem ipsum dolor sit amet.</span></div>
-	</li>
 </ul>
 
 

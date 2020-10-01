@@ -83,8 +83,25 @@ def cancel():
         return 'unable to delete the user.'
     return render_template('cancel.html')
 
-@auth.route('/addlog')
+@auth.route('/addlog', methods=["GET", "POST"])
 @login_required
 def addlog():
+    if request.method == "POST":
+        task = {
+            "recipe_name": request.form.get("recipe_name"),
+            "brew_date": request.form.get("brew_date"),
+            "duration": request.form.get("duration"),
+            "alcohol": request.form.get("alcohol"),
+            "ingredients": request.form.get("ingredients"),
+            "mashing": request.form.get("mashing"),
+            "lautering": request.form.get("lautering"),
+            "boiling": request.form.get("boiling"),
+            "cooling": request.form.get("cooling"),
+            "fermentation": request.form.get("fermentation"),
+            "maturing": request.form.get("maturing"),
+        }
+        mongo.db.logs.insert_one(request.form.to_dict())
+        flash("Log Successfully Added")
+        return redirect(url_for("main.dashboard"))
     return render_template('addlog.html')
 

@@ -22,4 +22,3 @@ def dashboard():
 
 
 #log=mongo.db.log.find()
-

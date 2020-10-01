@@ -2,13 +2,11 @@ html,
 body {
   margin: 0;
   height: 100%;
- 
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
-  
+  height: 80px;
+  width: 50px;
 }
 
 .footer-copyright {
@@ -16,9 +14,13 @@ body {
 }
 /* font-family: "Open Sans", sans-serif;*/
 
-.responsive {
-    height: 50%;
-    width: 50%;
-    align-content: center;
-    
+h5 {
+  text-decoration: underline overline;
+  font-weight: bold;
 }
+
+h3 {
+  text-decoration: underline overline;
+  font-weight: bold;
+}
+
