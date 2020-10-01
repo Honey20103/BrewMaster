@@ -1,22 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="col s6 m4 centered">
-<a class="responsive" href="{{ url_for('main.index') }}"> 
-<img src="{{ url_for('static', filename='images/brewmaster3.1.png') }}" alt="BrewMaster">
+
+<div class="container">
+<a class="responsive" href="{{ url_for('main.index') }}">
+  <img src="{{ url_for('static', filename='images/brewmaster3.1.png') }}" alt="BrewMaster" class="image">
 </a>
+  <div class="overlay">
+    <div class="text">Welcome to brewMaster St. agur blue cheese jarlsberg cream cheese. Cheese strings macaroni cheese cheesecake melted cheese fondue parmesan brie cheesecake. Jarlsberg fondue macaroni cheese smelly cheese cauliflower cheese taleggio feta fromage. Bocconcini.</div>
+  </div>
 </div>
-<!--
-<div class="col s12 m2">
-	<h1 class="h2 z-depth-3 has-text-centered lime-text text-darken-4">
-		Welcome to BrewMaster
-	</h1>
-</div>-->
-<br>
 
 
-<h6 class="subtitle has-text-centered">
-  About the site to be entered here
-</h6>
 
 {% endblock %}

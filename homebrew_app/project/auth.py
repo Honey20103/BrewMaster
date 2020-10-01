@@ -84,6 +84,7 @@ def cancel():
         return 'unable to delete the user.'
     return render_template('cancel.html')
 
+
 @auth.route('/addlog', methods=["GET", "POST"])
 @login_required
 def addlog():
@@ -129,6 +130,7 @@ def edit_log(log_id):
 
     the_log = mongo.db.logs.find_one({"_id": ObjectId(log_id)})
     return render_template('edit_log.html', log=the_log)
+
 
 @auth.route('/delete_log/<log_id>')
 @login_required
