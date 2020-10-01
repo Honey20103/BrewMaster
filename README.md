@@ -113,7 +113,7 @@ Initial wireframes were done on paper and pen, I'll probably at a later stage ad
 
 Choose to work with both relational and non-relational databases namely SQLite3 and MongoDB. I used MongoBD for the brew data forms as its schema-less and  presents a clean document option JSON style documents. It seemed suitable for this use case of a diary log. As for the SQLite DB i chose to use it to test out working with a relational and the benefits of it being lightweight in terms of setup and database administration(no actual server or configurations required) and it fit my needs to be able to create to a database to store user info and fetch altogether, which would be advantageous when it comes to mobile devices considering the database is integrated with the app, meaning less lag(mobile first approach).
 
-<img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/database_schema.png" style="margin: 0;" width="300" height="200" >
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/database_schema.png" style="margin: 0;" >
 
 
 ### Surface
