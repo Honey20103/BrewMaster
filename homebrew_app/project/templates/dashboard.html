@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		<div class="notification brown lighten-5 brown-text text-darken-4">
+			{{ messages[0] }}
+		</div>
+		{% endif %}
+		{% endwith %}
+
 <h4 class="title  is-capitalized has-text-grey-lighter has-text-centered">
 	{{ name }}'s Beer Diary!
 </h4>

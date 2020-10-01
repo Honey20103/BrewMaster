@@ -1,14 +1,20 @@
 {% extends "base.html" %} {% block content %}
 <br>
 <br>
-
+{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		<div class="notification brown lighten-5 brown-text text-darken-4">
+			{{ messages[0] }}
+		</div>
+		{% endif %}
+		{% endwith %}
 <h2 class="title brown-text text-lighten-5 center-align"> Edit Brew Log</h2>
 
 <br>
 
 <div class="row card-panel brown lighten-5 brown-text text-darken-4">
 
-	<form method="POST" action="{{ url_for('auth.edit_log', log_id=log.id) }}" class="col s12">
+	<form method="POST" action="{{ url_for('auth.edit_log', log_id=log._id) }}" class="col s12">
 		<!---   Add recipe name & datepicker      -->
 		<div class="row">
 			<div class="input-field col s6 m4 l3">

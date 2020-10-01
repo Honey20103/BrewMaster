@@ -103,7 +103,7 @@ def addlog():
             "maturing": request.form.get("maturing"),
         }
         mongo.db.logs.insert_one(log)
-        flash("Log Successfully Added")
+        flash('Log Successfully Added','flashcolor')
         return redirect(url_for("main.dashboard"))
     return render_template('addlog.html')
 
@@ -126,7 +126,7 @@ def edit_log(log_id):
             "maturing": request.form.get("maturing"),
         }
         mongo.db.logs.update({"_id": ObjectId(log_id)}, update)
-        flash("Log Successfully Updated")
+        flash("Log Successfully Updated",'flashcolor')
 
     the_log = mongo.db.logs.find_one({"_id": ObjectId(log_id)})
     return render_template('edit_log.html', log=the_log)
@@ -136,5 +136,5 @@ def edit_log(log_id):
 @login_required
 def delete_log(log_id):
     mongo.db.logs.remove({"_id": ObjectId(log_id)})
-    flash("Brew Log is Deleted")
+    flash("Brew Log is Deleted",'flashcolor')
     return redirect(url_for("main.dashboard"))

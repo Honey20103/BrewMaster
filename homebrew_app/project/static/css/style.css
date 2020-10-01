@@ -27,7 +27,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: rgba(65, 48, 13, 0.959);
 }
 
 .container:hover .overlay {
@@ -62,12 +62,12 @@ body {
 /* font-family: "Open Sans", sans-serif;*/
 
 h5 {
-  text-decoration: underline overline;
+  text-decoration: underline ;
   font-weight: bold;
 }
 
 h3 {
-  text-decoration: underline overline;
+  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -78,4 +78,12 @@ h3 {
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
+}
+
+.datepicker {
+    color: rgba(65, 48, 13, 0.959)
+}
+
+.flashcolor {
+    color: rgba(65, 48, 13, 0.959)
 }
