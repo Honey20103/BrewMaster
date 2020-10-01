@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<br>
+
+<h2 class="title brown-text text-lighten-5 center-align"> Edit Brew Log</h2>
+
+<br>
+
+<div class="row card-panel brown lighten-5 brown-text text-darken-4">
+	<form action="{{ url_for('auth.edit_log', log_id=log.id) }}" method="POST" class="col s12">
+		<!---   Add recipe name & datepicker      -->
+		<div class="row">
+			<div class="input-field col s6 m4 l3">
+				<i class="material-icons prefix">assignment</i>
+				<input id="recipe_name" name="recipe_name" type="text" class="validate">
+				<label for="icon_prefix">Recipe Name</label>
+			</div>
+
+			<div class="input-field col s6 m4 l3" id="matfix">
+				<i class="material-icons prefix">today</i>
+				<input id="brew_date" type="text" class="datepicker" name="brew_date">
+				<label for="icon_prefix">Brew Date</label>
+			</div>
+		</div>
+		<!---   Duration  & alcohol percentage      -->
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">timer</i>
+				<input id="duration" name="duration" type="text">
+				<label for="icon_prefix">Duration (hours)</label>
+			</div>
+			<div class="input-field col s6">
+				<i class="material-icons prefix">local_bar</i>
+				<input id="alcohol" name="alcohol" type="text">
+				<label for="icon_prefix">Alcohol %</label>
+			</div>
+		</div>
+		<!---   Ingredients     -->
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">colorize</i>
+				<textarea name="ingredients" id="ingredients" class="materialize-textarea"></textarea>
+				<label for="icon_prefix">Ingredients</label>
+			</div>
+		</div>
+
+		<!---   Brewing steps     -->
+		<h5> STEPS & PROCEDURE </h5>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="mashing" id="mashing" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Mashing Step</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="lautering" id="lautering" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Lautering Step</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="boiling" id="boiling" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Boiling Step</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="cooling" id="cooling" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Cooling Step</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="fermentation" id="fermentation" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Fermentation Step</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="maturing" id="maturing" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Maturation Step</label>
+			</div>
+		</div>
+        <!---   Brewing steps     -->
+        <div class="row">
+        <div class="col s12 center-align">
+        <button type="submit" class="btn-large brown darken-4 text-shadow">
+            Update Log <i class="fas fa-edit right"></i>
+        </button>
+        </div>
+        </div>
+
+</div>
+</form>
+</div>
+
+{% endblock %}

@@ -5,6 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, logout_user, login_required, current_user
 from .models import User
+from bson.objectid import ObjectId
 from . import mongo
 
 auth = Blueprint('auth', __name__)
@@ -87,7 +88,7 @@ def cancel():
 @login_required
 def addlog():
     if request.method == "POST":
-        task = {
+        log = {
             "recipe_name": request.form.get("recipe_name"),
             "brew_date": request.form.get("brew_date"),
             "duration": request.form.get("duration"),
@@ -100,8 +101,12 @@ def addlog():
             "fermentation": request.form.get("fermentation"),
             "maturing": request.form.get("maturing"),
         }
-        mongo.db.logs.insert_one(request.form.to_dict())
+        mongo.db.logs.insert_one(log)
         flash("Log Successfully Added")
         return redirect(url_for("main.dashboard"))
     return render_template('addlog.html')
 
+@auth.route("/edit_log/<log_id>", methods=["GET", "POST"])
+def edit_log(log_id):
+    the_log = mongo.db.log.find_one({"_id": ObjectId(log_id)})
+    return render_template('edit_log.html', log=the_log)

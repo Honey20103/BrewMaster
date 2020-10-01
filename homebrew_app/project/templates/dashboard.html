@@ -22,7 +22,7 @@
 		<div class="collapsible-header">
             <div class="col s3">
                 <i class="fas fa-caret-down"></i>
-                <a class="waves-effect waves-light btn lime darken-4" href="">Edit</a>
+                <a class="waves-effect waves-light btn lime darken-4" href="{{ url_for('auth.edit_log', log_id=recipe._id) }}">Edit</a>
                 <a href="" class="waves-effect waves-light btn brown darken-3">Kill</a>
             </div>
             <div class="col s6">
