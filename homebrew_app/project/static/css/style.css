@@ -26,7 +26,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: rgba(65, 48, 13, 0.959);
 }
 
@@ -47,13 +47,9 @@ body {
 }
 
 .text h2 {
-    font-weight: bold;
-    font-size: 24px;
+  font-weight: bold;
+  font-size: 24px;
 }
-
-
-
-
 
 /* LOGO */
 .logo {
@@ -65,27 +61,24 @@ body {
   text-align: center;
 }
 
-
 h5 {
-  text-decoration: underline ;
+  text-decoration: underline;
   font-weight: bold;
 }
 
-
-
 .btn {
-    margin: 5px;
+  margin: 5px;
 }
 
 .collapsible-header .col strong {
-    margin: 5px;
-    line-height: 42px;
+  margin: 5px;
+  line-height: 42px;
 }
 
 .datepicker {
-    color: rgba(65, 48, 13, 0.959)
+  color: rgba(65, 48, 13, 0.959);
 }
 
 .flashcolor {
-    color: rgba(65, 48, 13, 0.959)
+  color: rgba(65, 48, 13, 0.959);
 }
