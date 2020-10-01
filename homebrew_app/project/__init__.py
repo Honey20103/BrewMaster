@@ -4,6 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from flask_login import LoginManager
+from os import path
+if path.exists("env.py"):
+  import env 
 
 # initiate SQLAlchemy for SQLite db
 db = SQLAlchemy()
@@ -15,13 +18,12 @@ def create_app():
     app = Flask(__name__)
 
     app.config["DEBUG"] = True
-    app.config['SECRET_KEY'] = 'secret-key-goes-here'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['SECRET_KEY'] = "secret-key-goes-here"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db.sqlite"
 
     db.init_app(app)
 
-    app.config["MONGO_DBNAME"] = 'brew_master'
-    app.config["MONGO_URI"] = 'mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mongodb.net/brew_master?retryWrites=true&w=majority'
+    app.config["MONGO_URI"] = "mongodb+srv://root:rootbabyboy@honeycluster.v8y4e.mongodb.net/brew_master?retryWrites=true&w=majority"
 
     mongo.init_app(app)
 
