@@ -22,19 +22,11 @@ The application will be available to the public in the future as a beer brewing 
 ***
 
 ### Website
-A live demo can be found [here](https://the-brew-master.herokuapp.com/)
 
-[Home iPhone](xxx)
-
-[Home iPad](xxx)
-
-[Recipe iPhone](xxx)
-
-[Recipe iPad](xxx)
-
-[Form iPhone](xxx)
+<img src= "https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/multimockup.png" style="margin: 0;">
 
 
+A live demo can be found [here](https://brewmaster-app.herokuapp.com/)
 
 ***
 
@@ -282,7 +274,7 @@ flask run
 ```
 
 ### App Link
-Find the app deployed at [this link](https://the-brew-master.herokuapp.com/)
+Find the app deployed at [this link](https://brewmaster-app.herokuapp.com/)
 
 
 ***
