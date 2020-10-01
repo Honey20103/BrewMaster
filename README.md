@@ -136,6 +136,7 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 * **Add Ingredient** - Ingredient options will be available however if an option is not found, the user can add a new ingredient to the database.
 * **Edit & Delete ingredients** - Ability for the user to edit and delete ingredients.
 * **Multiple users login** - Ability to have more profiles for multiple beer brewers to log their recipes.
+* **View ther brewers logs** - Ability for brewers to unhide or unlock certain logs to be publicly visible to other brewers on the app.
 
 ### Future Features
 
@@ -143,7 +144,7 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 - **Brew Images** Ability to add/update a log by adding an image or images of the final brew result.
 - **Log order arrangement**List logs in dashboard according to date of brew and not when entered.
 - **Rating system** - The ability to star rate favourite brew day recipe
-- **View ther brewers logs** - Ability for brewers to unhide or unlock certain logs to be publicly visible to other brewers on the app.
+- **Database per user login** -  Have separate DB for each user, prevent other users deleting or viewing logs
 
 ***
 

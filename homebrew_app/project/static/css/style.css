@@ -46,30 +46,32 @@ body {
   text-align: center;
 }
 
+.text h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 
 
 
 /* LOGO */
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 50px;
 }
 
 .footer-copyright {
   text-align: center;
 }
-/* font-family: "Open Sans", sans-serif;*/
+
 
 h5 {
   text-decoration: underline ;
   font-weight: bold;
 }
 
-h3 {
-  text-decoration: underline;
-  font-weight: bold;
-}
+
 
 .btn {
     margin: 5px;
