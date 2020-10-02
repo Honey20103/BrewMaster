@@ -339,7 +339,9 @@ The content on the site is derived from my boyfriend's self-made beer brewing lo
 - I'd like to thank tutor Tim Nelson at CodeInstitute who helped unblock me when i was completely stuck and providing extra helpful resources.
 
 
-
+<p align="center">
+  <img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/brewmaster2.png" style="margin: 0;" width="150" height="100">
+</p>
 
 
 
