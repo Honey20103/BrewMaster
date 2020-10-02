@@ -190,6 +190,10 @@ Experience for mobile devices when it pertains to the homepage was not responsiv
 
 The full user story testing can be found [here](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/BrewMaster%20User%20Story%20Testing.pdf).
 
+* Feedback from Users;
+  - The add log form seemed to have been allowing creation of log with empty fields. (FIXED)
+  - The datepicker doesn't require an entry to submit form. (Attempted to fix this with a js script however submit button becomes unfunctional, thus was unable to fix this issu, however Date field shows red if empty)
+
 #### [Web Accessibility](https://www.webaccessibility.com/)
 
 <img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/webaccessibility.png" style="margin: 0;" >
