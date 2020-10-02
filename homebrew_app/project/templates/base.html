@@ -97,20 +97,33 @@
 
 	<script type="text/javascript">
 		// Date picker functions 
-	            $('.datepicker').pickadate({
-	            selectMonths: true, // Creates a dropdown to control month
-	            selectYears: 10, // Creates a dropdown of 10 years to control year,
-	            today: 'Today',
-	            clear: 'Clear',
-	            close: 'Ok',
-	            closeOnSelect: false // Close upon selecting a date,
-	        });
-	
-		        // function to fix bug within materialise for date picker
-				document.getElementById("matfix").addEventListener("click", function(e) {
-					e.stopPropagation();
-				});
-	       
+		            $('.datepicker').pickadate({
+		            selectMonths: true, // Creates a dropdown to control month
+		            selectYears: 10, // Creates a dropdown of 10 years to control year,
+		            today: 'Today',
+		            clear: 'Clear',
+		            close: 'Ok',
+		            closeOnSelect: false // Close upon selecting a date,
+		        });
+		
+			        // function to fix bug within materialise for date picker
+					document.getElementById("matfix").addEventListener("click", function(e) {
+						e.stopPropagation();
+	                });
+             
+             // function ensures the datepicker is a required field to submit form (code taken from https://jsfiddle.net/2bmdrz9L/)
+	        function checkDate() {
+	  if ($('#brew_date').val() == '') {
+	    $('#brew_date').addClass('invalid')
+	  } else {
+	    $('#brew_date').removeClass('invalid')
+	  }
+	}
+
+	$('#brew_date').change(function() {
+	  checkDate();
+	});
+		       
 	</script>
 	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	{% block scripts %} {% endblock %}
