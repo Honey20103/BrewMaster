@@ -285,7 +285,7 @@ source ./venv/bin/activiate
 Install requirements
 ```bash 
 # install python requirements
-python3 -m pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 Deploy SQLite database
 ```python
@@ -297,7 +297,7 @@ Deploy Mongo database
 ```bash 
 #Setup Mongo DB account [here](https://www.mongodb.com/)
 Create a mongoDB database.
-Create two collections in it: recipes, ingredients
+Create a collection in it: logs
 ```
 In a terminal, you can set the FLASK_APP and FLASK_DEBUG values:
 ```bash
