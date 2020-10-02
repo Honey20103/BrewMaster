@@ -22,13 +22,13 @@
 		<div class="row">
 			<div class="input-field col s6 m4 l3">
 				<i class="material-icons prefix">assignment</i>
-				<input id="recipe_name" name="recipe_name" type="text" class="validate">
+				<input id="recipe_name" name="recipe_name" type="text" class="validate" required>
 				<label for="icon_prefix">Recipe Name</label>
 			</div>
 
 			<div class="input-field col s6 m4 l3" id="matfix">
 				<i class="material-icons prefix">today</i>
-				<input id="brew_date" type="text" class="datepicker" name="brew_date">
+				<input id="brew_date" type="text" class="datepicker" name="brew_date" required>
 				<label for="icon_prefix">Brew Date</label>
 			</div>
 		</div>
@@ -36,12 +36,12 @@
 		<div class="row">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">timer</i>
-				<input id="duration" name="duration" type="text">
+				<input id="duration" name="duration" type="text" required>
 				<label for="icon_prefix">Duration (hours)</label>
 			</div>
 			<div class="input-field col s6">
 				<i class="material-icons prefix">local_bar</i>
-				<input id="alcohol" name="alcohol" type="text">
+				<input id="alcohol" name="alcohol" type="text" required>
 				<label for="icon_prefix">Alcohol %</label>
 			</div>
 		</div>
@@ -49,7 +49,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">colorize</i>
-				<textarea name="ingredients" id="ingredients" class="materialize-textarea"></textarea>
+				<textarea name="ingredients" id="ingredients" class="materialize-textarea" required></textarea>
 				<label for="icon_prefix">Ingredients</label>
 			</div>
 		</div>
