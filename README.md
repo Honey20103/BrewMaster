@@ -182,7 +182,7 @@ Google Chrome
 Microsoft Edge
 Mozilla Firefox
 
-Experience for mobile devices when it pertains to the homepage was not responsive to section/column of the image.
+Experience for mobile devices when it pertains to the homepage was not responsive to section/column of the image.(FIXED)
 
 #### User Story Testing
 
@@ -249,7 +249,7 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 * JS for datepicker functionality will not initiate from static/js/script.js file, it only successfuly initiates js code is directly in base.html file.
 
-* Fade in Overlay CSS hover effect not functioning well for mobile devices.
+* Fade in Overlay CSS hover effect not functioning well for mobile devices. (FIXED)
 
 
 ***

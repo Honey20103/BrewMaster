@@ -82,3 +82,23 @@ h5 {
 .flashcolor {
   color: #41300d;
 }
+
+
+/* Make homepage text responsive*/
+@media (max-width: 850px){
+    .text{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 768px){
+    .text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px){
+    .text{
+        font-size: 6px;
+    }
+}
