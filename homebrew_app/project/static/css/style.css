@@ -82,60 +82,105 @@ h5 {
   color: #41300d;
 }
 
-
 /* Make homepage text responsive*/
-@media (max-width: 850px){
-    .text{
-        font-size: 5px;
-    }
+@media (max-width: 850px) {
+  .text {
+    font-size: 5px;
+  }
 }
 
-@media (max-width: 768px){
-    .text{
-        font-size: 15px;
-    }
+@media (max-width: 850px) {
+  .text h2 {
+    font-size: 5px;
+  }
 }
 
-@media (max-width: 375px){
-    .text{
-        font-size: 6px;
-    }
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 17px;
+  }
 }
 
+@media (max-width: 375px) {
+  .text {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  ..home-title {
+    font-size: 8px;
+  }
+}
 
 @media only screen and (max-width: 480px) {
-    .text{
-        font-size: 6px;
-    }
+  .text {
+    font-size: 6px;
+  }
 }
 
-@media(min-width: 992px) {
-   .text{
-        font-size: 15px;
-    }
+@media only screen and (max-width: 480px) {
+  .home-title {
+    font-size: 8px;
+  }
 }
 
+@media (min-width: 992px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-title {
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 440px) {
-  .text{
-        font-size: 5px;
-    }
+  .text {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 440px) {
+  .home-title {
+    font-size: 5px;
+  }
 }
 
 @media (min-width: 414px) {
-  .text{
-        font-size: 5px;
-    }
+  .text {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 414px) {
+  .home-title {
+    font-size: 7px;
+  }
 }
 
 @media (min-width: 375px) {
-  .text{
-        font-size: 5px;
-    }
+  .text {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 375px) {
+  .home-title {
+    font-size: 7px;
+  }
 }
 
 @media (min-width: 768px) {
-   .text{
-        font-size: 15px;
-    }
+  .text {
+    font-size: 15px;
+  }
+}
+
+media (min-width: 768px) {
+  .home-title {
+    font-size: 17px;
+  }
 }

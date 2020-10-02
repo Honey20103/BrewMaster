@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
 from flask_login import LoginManager
 from os import path
-if path.exists("env.py"):
+if os.path.exists("env.py"):
     import env
 
 # initiate SQLAlchemy for SQLite db
