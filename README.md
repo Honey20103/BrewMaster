@@ -340,7 +340,7 @@ The content on the site is derived from my boyfriend's self-made beer brewing lo
 
 
 <p align="center">
-  <img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/brewmaster2.png" style="margin: 0;" width="200" height="100">
+  <img src="https://github.com/Honey20103/BrewMaster/blob/master/homebrew_app/project/static/images/brewmaster2.png" style="margin: 0;" width="150" height="100">
 </p>
 
 
