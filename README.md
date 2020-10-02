@@ -190,7 +190,8 @@ The full user story testing can be found [here](https://github.com/Honey20103/Br
 
 #### [Web Accessibility](https://www.webaccessibility.com/)
 
-<img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/webaccessibility.png" "margin= 0">
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/webaccessibility.png" style="margin: 0;" >
+
 
 #### Chrome Developer Tools and Gitpod vscode
 Constantly used to ensure the app is mobile-first, and works well with all kinds of devices and provide real-time ability to identify errors in my HTML code, and helped me troubleshoot my HTML/CSS.
