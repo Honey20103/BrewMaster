@@ -27,7 +27,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(65, 48, 13, 0.959);
+  background-color: #41300d;
 }
 
 .container:hover .overlay {
@@ -76,9 +76,9 @@ h5 {
 }
 
 .datepicker {
-  color: rgba(65, 48, 13, 0.959);
+  color: #41300d;
 }
 
 .flashcolor {
-  color: rgba(65, 48, 13, 0.959);
+  color: #41300d;
 }
