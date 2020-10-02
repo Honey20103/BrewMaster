@@ -147,17 +147,19 @@ My idea for the design is to have colour relating to beer such as brown, gold, o
 * [HTML](https://en.wikipedia.org/wiki/HTML)
 * [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [Bootstrap](https://getbootstrap.com/)
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [Materialize](https://materializecss.com/)
 * [Bulma](https://bulma.io/)
 
 
 ### Backend
 
-* [MongoDB](https://www.mongodb.com/)
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Python](https://www.python.org/)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [MongoDB](https://www.mongodb.com/)
+* [SQLite3](https://sqlite.org/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
 
 ### Deployed
 
