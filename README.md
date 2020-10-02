@@ -188,6 +188,10 @@ Experience for mobile devices when it pertains to the homepage was not responsiv
 
 The full user story testing can be found [here](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/BrewMaster%20User%20Story%20Testing.pdf).
 
+#### [Web Accessibility](https://www.webaccessibility.com/)
+
+<img src="https://github.com/Honey20103/BrewMaster/blob/master/wireframes/webaccessibility.png" "margin= 0">
+
 #### Chrome Developer Tools and Gitpod vscode
 Constantly used to ensure the app is mobile-first, and works well with all kinds of devices and provide real-time ability to identify errors in my HTML code, and helped me troubleshoot my HTML/CSS.
 
@@ -195,6 +199,9 @@ Gitpod terminal providing lint issues and problems when it comes to the differen
 
 Further more for css testing I used this [site](http://csslint.net/) no errors found except warnings that informed that for IE6,IE7,IE8 I require fallback colors color: rgba(65, 48, 13, 0.959); I have made relevant changes to ommit this warning.
 
+[W3C CSS Validator](https://jigsaw.w3.org/) reported 14 errors.
+
+HTML valid according to [site](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbrewmaster-app.herokuapp.com%2F)
 
 #### Random User Testing
 Sent the app to boyfriend and colleagues to use, collecting their feedback for bug fixes and adjustments.
