@@ -308,13 +308,41 @@ In a terminal, you can set the FLASK_APP and FLASK_DEBUG values:
 export FLASK_APP=project
 export FLASK_DEBUG=1
 ```
-Run app
+Run app locally
 ```bash
 flask run
 ```
 
+Deploy to Heroku
+
+* Create a free account in [Heroku](https://signup.heroku.com/)
+* Once logged in Click on "Create new app", provide an app name of your choice and preffered region where the server your app will be deployed on.
+* Follow instruction [here](https://devcenter.heroku.com/articles/heroku-cli) on how to install the heroku cli on your device
+
+* Back to your CLI and project directory:
+
+Login (provide email address and password when prompted)
+```bash
+heroku login -i
+```
+
+Initialize a git repository in a new or existing directory
+```bash
+$ cd my-project/
+$ git init
+$ heroku git:remote -a your-app-name-goes-here
+```
+
+Deploy your app by committing your code to the repository and deploy it to Heroku using Git.
+```bash
+$ git add .
+$ git commit -am "write a valuable commit message here"
+$ git push heroku master
+```
+Observe the build process in your CLI python app is set, requirements.txt and procffle are found.
+
 ### App Link
-Find the app deployed at [this link](https://brewmaster-app.herokuapp.com/)
+When your build is successful your app would be deployed at similar [link:https://your-app-name.herokuapp.com/](https://brewmaster-app.herokuapp.com/) to this one.
 
 
 ***
