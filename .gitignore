@@ -1,3 +1,3 @@
-__pycache__
+__pycache__/
 db.sqlite
-env.py
+homebrew_app/project/env.py

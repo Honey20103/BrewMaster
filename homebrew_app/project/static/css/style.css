@@ -89,18 +89,6 @@ h5 {
   }
 }
 
-@media (max-width: 850px) {
-  .text h2 {
-    font-size: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-title {
-    font-size: 17px;
-  }
-}
-
 @media (max-width: 375px) {
   .text {
     font-size: 6px;
@@ -128,12 +116,6 @@ h5 {
 @media (min-width: 992px) {
   .text {
     font-size: 15px;
-  }
-}
-
-@media (min-width: 992px) {
-  .home-title {
-    font-size: 18px;
   }
 }
 
@@ -176,11 +158,5 @@ h5 {
 @media (min-width: 768px) {
   .text {
     font-size: 15px;
-  }
-}
-
-media (min-width: 768px) {
-  .home-title {
-    font-size: 17px;
   }
 }

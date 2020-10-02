@@ -206,6 +206,8 @@ Gitpod terminal providing lint issues and problems when it comes to the differen
 
 Further more for css testing I used this [site](http://csslint.net/) no errors found except warnings that informed that for IE6,IE7,IE8 I require fallback colors color: rgba(65, 48, 13, 0.959); I have made relevant changes to ommit this warning.
 
+Used the DOM to detect how to properly fix issue with Fade in Overlay CSS hover effect not functioning well for mobile devices, and inserted necesarry media queries in CSS to fix the issue, the text now no longer overlaps the image background when size decreases.
+
 [W3C CSS Validator](https://jigsaw.w3.org/) reported 14 errors.
 
 HTML valid according to [site](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbrewmaster-app.herokuapp.com%2F)
@@ -255,7 +257,9 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 * JS for datepicker functionality will not initiate from static/js/script.js file, it only successfuly initiates js code is directly in base.html file.
 
-* Fade in Overlay CSS hover effect not functioning well for mobile devices. (FIXED)
+* Fade in Overlay CSS hover effect not functioning well for mobile devices. (FIXED).
+
+* ENV VARIABLES - Went above and beyond to create environmental variables for my secret keys and URI's, however all my attempted where rendered unsuccessful. Kept receiving *ValueError: You must specify a URI or set the MONGO_URI Flask config variable* despite all attempts to use correct methods of setting up with env.py and also via gitpod. Reached out for help on the CodeInstitute slack channel and Tutor assistance, tutor could not help figure it out, neither the channel could help. I've exhausted all attempts to try not to submit my project with visible private info.
 
 
 ***
