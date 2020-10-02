@@ -182,26 +182,54 @@ Google Chrome
 Microsoft Edge
 Mozilla Firefox
 
+Experience for mobile devices when it pertains to the homepage was not responsive to section/column of the image.
 
 #### User Story Testing
 
-The full user story testing can be found [here]().
+The full user story testing can be found [here](https://github.com/Honey20103/BrewMaster/blob/master/wireframes/BrewMaster%20User%20Story%20Testing.pdf).
 
-#### Chrome Developer Tools
+#### Chrome Developer Tools and Gitpod vscode
 Constantly used to ensure the app is mobile-first, and works well with all kinds of devices and provide real-time ability to identify errors in my HTML code, and helped me troubleshoot my HTML/CSS.
+
+Gitpod terminal providing lint issues and problems when it comes to the different scripts/languages.
+
+Further more for css testing I used this [site](http://csslint.net/) no errors found except warnings that informed that for IE6,IE7,IE8 I require fallback colors color: rgba(65, 48, 13, 0.959); I have made relevant changes to ommit this warning.
+
 
 #### Random User Testing
 Sent the app to boyfriend and colleagues to use, collecting their feedback for bug fixes and adjustments.
 
 #### Python Testing
-PEP8online
+I used [PEP8online](http://pep8online.com/) together with gitpod Problem tab to observe errors and warnings. At the moment errors have been fixed, only warnings exist naming the warning "line too long"
+
+#### JS Testing
+Test any javascript errors with jslint [site](http://www.jslint.com/) no error apart from lint warning and too long empty spaces, i've removed those.
 
 #### MongoDB Testing
+
+Test mongoDB connection with the command 'mongod'
+
+```brew
+gitpod /workspace/BrewMaster/homebrew_app $ mongod
+2020-10-02T00:26:15.526+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] MongoDB starting : pid=58337 port=27017 dbpath=/data/db 64-bit host=ws-0567368c-beaf-4649-ab50-f1f1a84e5304
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] db version v4.0.20
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] git version: e2416422da84a0b63cde2397d60b521758b56d1b
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1d  10 Sep 2019
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] modules: none
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] build environment:
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten]     distmod: ubuntu1804
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-10-02T00:26:15.543+0000 I CONTROL  [initandlisten] 11444 MB of memory available to the process out of 60395 MB total system memory
+```
+mongod is the primary daemon process for the MongoDB system. It handles data requests, manages data access, and performs background management operations.
 
 #### SQLite Testing
 Two ways to test that when a user signed up they were stored in the database or it worked;
   - Used a sqlite database viewer to look at the row that was added to the table
-  - I also tried signing up with the same email address again, and when I got an error, I knew the first email was saved properly, also it   redirected me ssuccessfuly to the login page.
+  - I also tried signing up with the same email address again, and when I got an error, I knew the first email was saved properly, also it redirected me ssuccessfuly to the login page.
 
 #### Known Bugs
 
@@ -211,7 +239,9 @@ Two ways to test that when a user signed up they were stored in the database or 
 
 * Logo Image and favicon image will not load. (FIXED)
 
-* JS for datepicker functionality will not initiate from static/js/script.js file, it only ssuccessfuly initiates js code is directly in base.html file
+* JS for datepicker functionality will not initiate from static/js/script.js file, it only successfuly initiates js code is directly in base.html file.
+
+* Fade in Overlay CSS hover effect not functioning well for mobile devices.
 
 
 ***
